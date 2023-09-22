@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Matematika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        Nama    : Gusti Nyoman Satya Sudharsan</h1>
+    <h1>Nim     : 2215101040 </h1>
+
+    <h2>Perhitungan Matematika Sederhana</h2>
+
+    <h3>Menghitung Deret Fibonacci</h3>
+    <div>
+        <label for="fibonacciInput">Masukan angka : </label>
+        <input type="number" id="fibonacciInput">
+        <button onclick="calculateFibonacci()">Hitung</button>
+        <p id="fibonacciResult"></p>
+    </div>
+
+    <h3>Menghitung Volume Bangun Ruang</h3>
+    <div>
+        <label for="shape">Pilih Jenis Bangun Ruang : </label>
+        <select id="shape">
+            <option value="kubus">Kubus</option>
+            <option value="balok">Balok</option>
+            <option value="tabung">Tabung</option>
+            <option value="bola">Bola</option>
+            <option value="kerucut">Kerucut</option>
+        </select>
+    </div>
+    <div>
+        <label for="side">Masukan Panjang Sisi (cm) : </label>
+        <input type="number" id="side">
+        <br> <!-- Tambahkan baris kosong di sini -->
+        <button onclick="calculateVolume()">Hitung</button>
+        <p id="volumeResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
